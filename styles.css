@@ -24,7 +24,7 @@ body {
 .block-two,
 .block-three,
 .block-four {
-    padding: 8px 64px;
+    padding: 8px 214px;
     flex: 1;
 }
 
@@ -36,7 +36,6 @@ body {
     display: flex;
     align-items: center;
     background-color: #1F2937;
-    padding: 8px;
 }
 
 .right-links {
@@ -55,15 +54,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     color: white;
+    min-width: 1000px;
 }
 
 .content-one {
     display: flex;
     flex-grow: 1;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: center ;
     gap: 16px;
+    padding: 32px 0px;
 }
 
 .left-content {
@@ -74,7 +74,10 @@ body {
 }
 
 .right-content{
+    display: flex;
+    justify-content: end;
     flex:1 1 0;
+    
 }
 
 .blurb-header {
@@ -89,7 +92,8 @@ button {
     border-radius: 8px;
     padding: 8px;
     border: 1px solid royalblue;
-    padding: 8px 16px;
+    padding: 8px 24px;
+    font-size: 16px;
 }
 
 .footer {
