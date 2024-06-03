@@ -1,6 +1,10 @@
 * {
     font-family: roboto, Arial, san-serif;
+}
+
+a {
     text-decoration: none;
+    color: white;
 }
 
 html, body {
@@ -10,6 +14,7 @@ html, body {
 
 body {
     display: flex;
+    margin: 0;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
@@ -30,7 +35,6 @@ body {
 .header {
     display: flex;
     align-items: center;
-    color: white;
     background-color: #1F2937;
     padding: 8px;
 }
@@ -49,14 +53,46 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     color: white;
 }
 
 .content-one {
     display: flex;
-    text-align: center;
     flex-grow: 1;
     align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
+.left-content {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 16px;
+}
 
+.right-content{
+    flex:1 1 0;
+}
+
+.blurb-header {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+button {
+    align-self: flex-start;
+    background-color: royalblue;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid royalblue;
+    padding: 8px 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
