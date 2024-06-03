@@ -1,5 +1,6 @@
 * {
     font-family: roboto, Arial, san-serif;
+    font-size: 18px;
 }
 
 a {
@@ -25,7 +26,7 @@ body {
 .block-three,
 .block-four {
     padding: 8px 214px;
-    flex: 1;
+    flex: 1 1 0px;
 }
 
 .footer {
@@ -68,10 +69,17 @@ body {
     color: #1F2937; 
 }
 
+.block-three {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .items-row {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 64px;
     box-sizing: border-box;
 }
 
@@ -101,7 +109,6 @@ body {
 
 .right-content{
     display: flex;
-    justify-content: end;
     flex:1 1 0;
 }
 
@@ -124,11 +131,15 @@ button {
     border: 1px solid royalblue;
     padding: 8px 24px;
     font-size: 16px;
+    font-weight: 900;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 16px;
 }
 
 .item-pic {
@@ -136,6 +147,7 @@ button {
     border: 5px solid royalblue;
     flex: 1;
     max-width: 100%;
+    width: 150px;
 }
 
 .items-title {
@@ -147,4 +159,48 @@ button {
 .athlete-name {
     text-align: center;
     margin: 8px;
+}
+
+.quote {
+    text-align: start;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+    padding-left: 256px;
+    padding-right: 256px;
+    padding-top: 100px;
+}
+
+.author {
+    text-align: end;
+    color: #1F2937;
+    padding-left: 256px;
+    padding-right: 256px;
+    padding-bottom: 100px;
+    font-weight: 900;
+}
+
+.banner {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 512px;
+    padding: 64px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    background-color: royalblue;
+    border-radius: 16px;
+}
+
+.banner-button {
+    border: 1px solid white; 
+}
+
+.banner-title {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.banner-text {
+    font-size: 18px;
 }
