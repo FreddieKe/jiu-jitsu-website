@@ -34,6 +34,7 @@ body {
 
 .header {
     display: flex;
+    align-self: stretch;
     align-items: center;
     background-color: #1F2937;
 }
@@ -53,9 +54,34 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
     color: white;
     min-width: 1000px;
 }
+
+.block-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1000px;
+    color: #1F2937; 
+}
+
+.items-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 18px;
+}
+
 
 .content-one {
     display: flex;
@@ -77,12 +103,16 @@ body {
     display: flex;
     justify-content: end;
     flex:1 1 0;
-    
 }
 
 .blurb-header {
     font-size: 48px;
     font-weight: 900;
+}
+
+.blurb-body {
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 button {
@@ -99,4 +129,22 @@ button {
 .footer {
     display: flex;
     justify-content: center;
+}
+
+.item-pic {
+    border-radius: 16px;
+    border: 5px solid royalblue;
+    flex: 1;
+    max-width: 100%;
+}
+
+.items-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 32px;
+}
+
+.athlete-name {
+    text-align: center;
+    margin: 8px;
 }
